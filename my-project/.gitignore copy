@@ -8,3 +8,6 @@ backend/secretAccountKey.json
 # Node.js specific (optional, if using Node.js)
 node_modules/
 .env
+
+
+echo "backend/serviceAccountKey.json" >> .gitignore
