@@ -3,6 +3,8 @@ import bodyParser from 'body-parser';
 import admin from 'firebase-admin';
 import { readFileSync } from 'fs';
 import cors from 'cors';
+import { configDotenv } from 'dotenv';
+configDotenv();
 
 const app = express();
 app.use(bodyParser.json());
@@ -15,9 +17,11 @@ const serviceAccount = JSON.parse(readFileSync('./serviceAccountKey.json', 'utf8
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
   });
-  console.log(serviceAccount);
+  
   
 const db = admin.firestore();
+
+
 
 // Get All Users
 app.get('/users', async (req, res) => {
@@ -65,5 +69,5 @@ app.delete('/users/:id', async (req, res) => {
 });
 
 // Start Server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
