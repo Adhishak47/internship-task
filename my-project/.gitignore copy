@@ -1,0 +1,10 @@
+# Ignore the secretAccountKey.json file
+backend/secretAccountKey.json
+
+# Ignore any other secret keys if needed
+*.key
+*.pem
+
+# Node.js specific (optional, if using Node.js)
+node_modules/
+.env
