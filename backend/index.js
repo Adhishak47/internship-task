@@ -10,10 +10,13 @@ app.use(cors());
 
 // Initialize Firebase Admin SDK
 const serviceAccount = JSON.parse(readFileSync('./serviceAccountKey.json', 'utf8'));
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
 
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
+  console.log(serviceAccount);
+  
 const db = admin.firestore();
 
 // Get All Users
