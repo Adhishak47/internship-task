@@ -172,13 +172,13 @@ DELETE /users/:id
 
 The application is available as Docker images on Docker Hub:
 
-- Frontend: `yourdockerhub/user-dashboard-frontend`
-- Backend: `yourdockerhub/user-dashboard-backend`
+- Frontend: `adhish7/adhish-image:v2`
+- Backend: `adhish7/backend-app`
 
 To pull the images:
 ```bash
-docker pull yourdockerhub/user-dashboard-frontend
-docker pull yourdockerhub/user-dashboard-backend
+docker pull adhish7/adhish-image:v2
+docker pull `adhish7/backend-app
 ```
 
 ## 🔧 Configuration
