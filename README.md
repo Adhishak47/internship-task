@@ -122,7 +122,7 @@ user-dashboard/
 
 #### Get All Users
 ```http
-GET /api/users
+GET /users
 ```
 
 Response:
@@ -141,12 +141,12 @@ Response:
 
 #### Get Single User
 ```http
-GET /api/users/:id
+GET /users/:id
 ```
 
 #### Create User
 ```http
-POST /api/users
+POST /users
 ```
 
 Request Body:
@@ -160,12 +160,12 @@ Request Body:
 
 #### Update User
 ```http
-PUT /api/users/:id
+PUT /users/:id
 ```
 
 #### Delete User
 ```http
-DELETE /api/users/:id
+DELETE /users/:id
 ```
 
 ## 🐳 Docker Images
