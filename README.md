@@ -35,7 +35,7 @@ A modern user dashboard application built with React Vite, Node.js, Express, and
 
 ```
 user-dashboard/
-├── frontend/                # React Vite application
+├── my-project/                # React Vite application
 │   ├── src/
 │   ├── Dockerfile
 │   └── package.json
